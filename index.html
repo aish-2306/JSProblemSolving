@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JavaScript Problem Solving</h1>
+    
+    <section id="atm">
+        <h2>ATM Withdrawal System</h2>
+        <input type="number" id="atm-balance" placeholder="Enter Balance">
+        <input type="number" id="atm-amount" placeholder="Enter Amount">
+        <input type="password" id="atm-pin" placeholder="Set PIN">
+        <input type="password" id="atm-entered-pin" placeholder="Enter PIN">
+        <button onclick="atmWithdrawal()">Withdraw</button>
+        <p id="atm-result"></p>
+    </section>
+    
+    <section id="shopping">
+        <h2>Online Shopping Discount & Free Shipping</h2>
+        <input type="number" id="order-amount" placeholder="Enter Order Amount">
+        <button onclick="calculateFinalAmount()">Calculate</button>
+        <p id="shopping-result"></p>
+    </section>
+
+    <section id="grading">
+        <h2>Student Grading System</h2>
+        <input type="number" id="student-marks" placeholder="Enter Marks">
+        <input type="number" id="student-attendance" placeholder="Enter Attendance %">
+        <button onclick="calculateGrade()">Get Grade</button>
+        <p id="grading-result"></p>
+    </section>
+
+    <section id="traffic-light">
+        <h2>Smart Traffic Light System</h2>
+        <select id="traffic-density">
+            <option value="Heavy Traffic">Heavy Traffic</option>
+            <option value="Moderate Traffic">Moderate Traffic</option>
+            <option value="Light Traffic">Light Traffic</option>
+        </select>
+        <button onclick="trafficLightControl()">Get Time</button>
+        <p id="traffic-result"></p>
+    </section>
+
+    <section id="movie-ticket">
+        <h2>Movie Ticket Pricing</h2>
+        <input type="number" id="ticket-age" placeholder="Enter Age">
+        <input type="time" id="ticket-time">
+        <button onclick="calculateTicketPrice()">Get Price</button>
+        <p id="ticket-result"></p>
+    </section>
+
+    <section id="job-filter">
+        <h2>Job Application Filter</h2>
+        <input type="number" id="job-age" placeholder="Enter Age">
+        <input type="number" id="job-experience" placeholder="Enter Experience">
+        <input type="text" id="job-qualification" placeholder="Enter Qualification">
+        <button onclick="isEligibleForJob()">Check Eligibility</button>
+        <p id="job-result"></p>
+    </section>
+
+    <section id="ecommerce-coupon">
+        <h2>E-commerce Coupon Redemption</h2>
+        <input type="number" id="coupon-amount" placeholder="Enter Order Amount">
+        <input type="text" id="coupon-code" placeholder="Enter Coupon Code">
+        <button onclick="applyCoupon()">Apply</button>
+        <p id="coupon-result"></p>
+    </section>
+
+    <section id="fitness-plan">
+        <h2>Fitness Membership Plan</h2>
+        <select id="plan-type">
+            <option value="Basic">Basic</option>
+            <option value="Premium">Premium</option>
+            <option value="VIP">VIP</option>
+        </select>
+        <button onclick="choosePlan()">Choose Plan</button>
+        <p id="plan-result"></p>
+    </section>
+
+    <section id="electricity-bill">
+        <h2>Electricity Bill Calculation</h2>
+        <input type="number" id="electricity-units" placeholder="Enter Units">
+        <input type="time" id="electricity-time">
+        <button onclick="calculateElectricityBill()">Calculate</button>
+        <p id="electricity-result"></p>
+    </section>
+
+    <section id="flight-ticket">
+        <h2>Flight Ticket Booking</h2>
+        <select id="flight-class">
+            <option value="Economy">Economy</option>
+            <option value="Business">Business</option>
+            <option value="First">First</option>
+        </select>
+        <input type="number" id="flight-luggage" placeholder="Enter Luggage Weight">
+        <input type="checkbox" id="flight-student"> Student
+        <input type="checkbox" id="flight-senior"> Senior
+        <button onclick="calculateFlightFare()">Get Fare</button>
+        <p id="flight-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
